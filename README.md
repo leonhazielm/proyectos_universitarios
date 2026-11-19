@@ -24,8 +24,21 @@ Repositorio con prácticas y aplicaciones desarrolladas en Java y Python durante
 
 ### Python (`codigos_universidad/Python_Estructuras_y_GUI`)
 
-- **Interfaces gráficas (`Apps/`, `calculadora/`, `concentrado/`):** Aplicaciones de escritorio construidas con PyQt6 y Qt Designer (`.ui`), incluyendo navegación entre múltiples ventanas, calculadoras y resolución visual de series matemáticas (Fibonacci y factorial).
-- **Estructuras de datos y algoritmos (`arboles.py`, `hash.py`, `listas_colas.py`, `big_O_factorial.py`):** Implementación de árboles, tablas hash, listas, colas, diccionarios y ejercicios de análisis de complejidad algorítmica.
+
+- **Sistema de Algoritmos de Ordenamiento con GUI (`Proyecto 2`):** Aplicación de escritorio en PyQt6 con menú principal (`main.py`) que integra cuatro módulos independientes (`burbuja.py`, `quick.py`, `shell.py`, `radix.py`). Implementa los algoritmos desde cero sin funciones nativas de ordenamiento ni `max()`, validando entradas numéricas y conservando intacta la lista original mediante copias en memoria.
+- **Suite Integrada de Estructuras Lineales y Matemáticas (`concentrado/`):** Interfaz centralizada (`main.ui`) que conecta cuatro aplicaciones:
+  - **Mesa de Ayuda (`Mesa.py`):** Gestión de tickets combinando una cola FIFO para atención por orden de llegada, una pila LIFO para historial y reversión de atenciones (`deshacer`), y búsqueda recursiva por usuario.
+  - **Series Matemáticas (`Facto.py`, `Finonacci.py`):** Cálculo iterativo de factorial y secuencia de Fibonacci con manejo de excepciones y validación de enteros.
+  - **Calculadora (`Calculadora.py`):** Operaciones aritméticas básicas con evaluación controlada de expresiones y alertas gráficas (`QMessageBox`).
+- **Sistema CRUD de Registro Estudiantil (`formulario_diccionarios/`):** Formulario de escritorio respaldado por diccionarios anidados indexados por número de control para búsquedas en tiempo constante $O(1)$, con validación de campos obligatorios y confirmación de sobrescritura.
+- **Calculadora de Escritorio (`calculadora/`):** Interfaz construida con `QGridLayout` (`ventana_calculadora.ui`) y manejo de errores ante expresiones inválidas o divisiones entre cero.
+- **Navegación Multi-ventana (`Apps/`):** Arquitectura modular en PyQt6 que demuestra la instanciación y comunicación entre ventanas independientes (`QMainWindow`).
+- **Árbol Binario de Búsqueda (`arboles.py`):** Implementación de estructura jerárquica (`Nodo`, `ArbolBinarioBusqueda`) con inserción recursiva, búsqueda binaria y recorrido inorden para salida ordenada.
+- **Tabla Hash con Mapeo ASCII (`hash.py`):** Simulación de almacenamiento en memoria indexada mediante conversión de caracteres a código ASCII y función modular (`suma % 5`).
+- **Benchmarking de Complejidad Algorítmica (`big_O_factorial.py`):** Cálculo iterativo de factorial instrumentado con `time.time()` y `time.process_time()` para medir tiempo real de ejecución frente a tiempo neto de CPU.
+- **Sistema de Mesa de Ayuda en Consola (`proyecto_primer_parcial.py`):** Arquitectura orientada a objetos (`Ticket`, `MesaAyuda`) que integra colas FIFO, pilas LIFO y búsqueda recursiva desde terminal.
+- **Estructuras Lineales y Algoritmos de Dos Punteros (`listas_colas.py`, `polindromo.py`):** Operaciones de inserción y extracción por índice sobre listas/colas y verificación de palíndromos mediante recorrido convergente de extremos (`O(n)`).
+
 
 ## Ejecución
 1. Entrar a la carpeta `src` del proyecto correspondiente:
