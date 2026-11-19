@@ -1,4 +1,4 @@
-# Proyectos Universitarios - Ingeniería en Computación e Informática
+# Proyectos Universitarios 
 
 Repositorio con prácticas y aplicaciones desarrolladas en Java y Python durante mis estudios en la Universidad ITSPR | Instituto Tecnológico Superior de Purísima del Rincón perteneciente al TECNM. El enfoque principal es la programación orientada a objetos, estructuras de datos, lógica de negocio y desarrollo de interfaces gráficas de escritorio.
 
